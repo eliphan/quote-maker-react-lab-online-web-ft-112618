@@ -1,4 +1,5 @@
 export default (state = [], action) => {
+<<<<<<< HEAD
   let index;
   let quote;
 
@@ -33,3 +34,14 @@ export default (state = [], action) => {
       return state;
   }
 }
+=======
+  switch (action.type) {
+    case 'ADD_QUOTE'
+      return {quote: state.quote}
+    default:
+      return state
+  }
+  
+  
+}
+>>>>>>> ceb6e8542a986cc7d3ee3c893165cac5c4df5d73
